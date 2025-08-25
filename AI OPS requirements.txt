@@ -1,0 +1,52 @@
+AI OPS Indra requirements
+
+HCL resources
+Full name: Kumar, Santhosh
+User logon name: adm_KumarS2@akzonobel.com
+ 
+Full name: Kumar, Ajit
+User logon name: adm_AjitK@akzonobel.com
+ 
+Full name: Dawar, Divyam
+User logon name: adm_DawarD@akzonobel.com
+ 
+ 
+
+Windows Server (Atos) ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Name - gwcpo50410vn002
+Request for server access - CHG2071507 - in progress
+
+Azure Resources ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Subscription - ate_ccc_ms
+Subscription ID - c7299a30-d4bc-4309-b621-767ec878d08b
+
+Application Name - AI OPS
+
+Dev Resource - do_10254
+Prod Resource - po_10254
+Location - Germany West Central
+
+
+
+OpenAI ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dev
+Deployment  resource - do_10254
+Open AI Resource name -  OpenAI-DEV-AIOPS
+Deployment name - AIOPS_DEV_OAI_gpt-4o
+Model - gpt-4o
+API - https://openai-dev-aiops.openai.azure.com/openai/deployments/AIOPS_DEV_OAI_gpt-4o/chat/completions?api-version=2025-01-01-preview
+key/bearer token - 1VktmuHQa8cP2909c2aRbk03Aj6j5DSKfpIBgXCzbncvT3Rz6AAUJQQJ99BHACPV0roXJ3w3AAABACOGo2cK
+
+
+
+ServiceNow -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Display name - AIOPS ServiceNow
+UPN - svc_Inf_INB_AIOPSSe@akzonobel.com
+SAM - svc_Inf_INB_AIOPSSe
+
+1. API to pull all incident data
+2. API to pull all KB data
