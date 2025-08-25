@@ -11,15 +11,15 @@ logger = logging.getLogger(__name__)
 class OpenAIAnalyzer:
     def __init__(self):
         """Initialize OpenAI client with Azure OpenAI configuration"""
-        self.api_key = ""
+        self.api_key = "1VktmuHQa8cP22aRbk03Aj6j5DSKfpIBgXCzbncvT3Rz6AAUJQQJ99BHACPV0roXJ3w3AAABACOGo2cK"
         self.endpoint = "https://openai-dev-aiops.openai.azure.com/openai/deployments/AIOPS_DEV_OAI_gpt-4o/chat/completions?api-version=2025-01-01-preview"
         self.deployment_name = "AIOPS_DEV_OAI_gpt-4o"
         self.model = "gpt-4o"
         
-        # Headers for Azure OpenAI API
+        # FIXED: Headers for Azure OpenAI API - use api-key instead of Authorization Bearer
         self.headers = {
             "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.api_key}"
+            "api-key": self.api_key  # Changed from "Authorization": f"Bearer {self.api_key}"
         }
         
         logger.info("OpenAI Analyzer initialized with Azure OpenAI configuration")
